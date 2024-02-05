@@ -41,11 +41,11 @@ function generateNumberList(a: number, b: number) {
   let result: number[] = [];
 
   if (a < b) {
-    for (let i = a + 1; i < b; i++) {
+    for (let i = a; i < b; i++) {
       result.push(i);
     }
   } else if (a > b) {
-    for (let i = a + 1; i < b + 10; i++) {
+    for (let i = a; i < b + 10; i++) {
       result.push(i % 10);
     }
   }

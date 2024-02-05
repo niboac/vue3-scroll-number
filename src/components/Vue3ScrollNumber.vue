@@ -14,7 +14,9 @@ const props = defineProps({
   },
 });
 
-const newFrom = ref(props.from)
+const newFrom = computed(() => {
+  return props.from
+})
 
 function getFromNumbers(num: Number) {
   let toList = props.to.toString().split('')
