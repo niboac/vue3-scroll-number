@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { ref, computed } from 'vue';
 import Vue3ScrollNUmberItem from './Vue3ScrollNumberItem.vue';
 
 
@@ -14,15 +14,30 @@ const props = defineProps({
   },
 });
 
-function getNumbers(num: Number) {
+const newFrom = ref(props.from)
+
+function getFromNumbers(num: Number) {
+  let toList = props.to.toString().split('')
+  let fromList = newFrom.value.toString().split('')
+  return padWithZeros(num.toString().split(''), toList.length - fromList.length)
+}
+
+function getToNumbers(num: Number) {
   return num.toString().split('')
 }
 
+function padWithZeros(arr: string[], n: number) {
+  return Array.from({ length: n }).fill(0).concat(arr);
+}
+
 const fromNumbers = computed(() => {
-  return getNumbers(props.from)
+  console.log(" newFrom:>> ", newFrom.value);
+
+  return getFromNumbers(newFrom.value)
 })
+
 const toNumbers = computed(() => {
-  return getNumbers(props.to)
+  return getToNumbers(props.to)
 })
 </script>
 
@@ -30,9 +45,9 @@ const toNumbers = computed(() => {
   <div class="flex-row">
     <Vue3ScrollNUmberItem
       v-for="(item, index) in toNumbers"
-      :key="item"
-      :from="Number(fromNumbers[index] || 0)"
-      :to="Number(item)"
+      :key="(to.toString()) + index"
+      :from="Number(fromNumbers[index]) || 0"
+      :to="Number(item) || 0"
     ></Vue3ScrollNUmberItem>
   </div>
 </template>
