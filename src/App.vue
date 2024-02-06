@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Vue3ScrollingNumber from 'vue3-scrolling-number/src/components/Vue3ScrollNumber.vue'
+import Vue3ScrollingNumber from './components/Vue3ScrollNumber.vue'
 import { ref } from 'vue';
 
 const value = ref(229)

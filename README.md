@@ -17,7 +17,7 @@ pnpm add vue3-scrolling-number
 
 ## 使用
 ```
-import Vue3ScrollingNumber from 'vue3-scrolling-number/components/Vue3ScrollNumber.vue'
+import Vue3ScrollingNumber from 'vue3-scrolling-number/src/components/Vue3ScrollNumber.vue'
  ```
 ```
  <Vue3ScrollingNumber
