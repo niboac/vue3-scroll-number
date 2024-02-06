@@ -16,8 +16,7 @@
     "pub": "vite build && npm config set registry https://registry.npmjs.org && npm publish && npm config set registry https://registry.npmmirror.com"
   },
   "dependencies": {
-    "vue": "^3.4.15",
-    "vue3-scrolling-number": "^0.0.1"
+    "vue": "^3.4.15"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",

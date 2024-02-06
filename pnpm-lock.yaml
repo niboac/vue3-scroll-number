@@ -8,9 +8,6 @@ dependencies:
   vue:
     specifier: ^3.4.15
     version: 3.4.15(typescript@5.3.3)
-  vue3-scrolling-number:
-    specifier: ^0.0.1
-    version: 0.0.1(typescript@5.3.3)
 
 devDependencies:
   '@rushstack/eslint-patch':
@@ -3127,14 +3124,6 @@ packages:
       semver: 7.5.4
       typescript: 5.3.3
     dev: true
-
-  /vue3-scrolling-number@0.0.1(typescript@5.3.3):
-    resolution: {integrity: sha512-vpaL9vjYX8cg9QNhuDp6rt/+oKrmy9ibfj3TfG3mcHW8Sm79mt9Vb17hHPNIrXD9GJ2r0mTSmdyD904kqaOh8w==}
-    dependencies:
-      vue: 3.4.15(typescript@5.3.3)
-    transitivePeerDependencies:
-      - typescript
-    dev: false
 
   /vue@3.4.15(typescript@5.3.3):
     resolution: {integrity: sha512-jC0GH4KkWLWJOEQjOpkqU1bQsBwf4R1rsFtw5GQJbjHVKWDzO6P0nWWBTmjp1xSemAioDFj1jdaK1qa3DnMQoQ==}
