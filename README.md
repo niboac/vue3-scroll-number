@@ -1,21 +1,21 @@
-# vue3-scroll-number
+# vue3-scrolling-number
 一个仅支持 vue3 的滚动数字组件
 
 ## 安装
 ```
-npm install vue3-scroll-number
+npm install vue3-scrolling-number
 ```
 或者
 ```
-pnpm add vue3-scroll-number
+pnpm add vue3-scrolling-number
 ```
 
 ## 使用
 ```
-import Vue3ScrollNumber from 'vue3-scroll-number/components/Vue3ScrollNumber.vue'
+import Vue3ScrollingNumber from 'vue3-scrolling-number/components/Vue3ScrollNumber.vue'
  ```
 ```
- <Vue3ScrollNumber
+ <Vue3ScrollingNumber
       style="font-size: 55px;"
       :from="21"
       :to="value"
