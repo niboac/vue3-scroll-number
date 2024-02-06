@@ -46,6 +46,7 @@
   "homepage": "https://github.com/niboac/vue3-scroll-number#readme",
   "files": [
     "package.json",
+    "src",
     "README.md"
   ],
   "keywords": [
