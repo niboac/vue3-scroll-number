@@ -1,4 +1,5 @@
 import Vue3ScrollNumber from './Vue3ScrollNumber.vue'
+import type { App } from 'vue'
 
 // 按需引入
 export { Vue3ScrollNumber }
@@ -6,9 +7,9 @@ export { Vue3ScrollNumber }
 const component = [Vue3ScrollNumber]
 
 const Vue3ScrollingNumber = {
-  install(App) {
+  install(app: App) {
     component.forEach((item) => {
-      App.component(item.name, Vue3ScrollNumber)
+      app.component(item.name, Vue3ScrollNumber)
     })
   }
 }

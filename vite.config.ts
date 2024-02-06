@@ -16,7 +16,7 @@ export default defineConfig({
   build: {
     outDir: 'dist', //输出文件名称
     lib: {
-      entry: path.resolve(__dirname, './src/components/index.js'), //指定组件编译入口文件
+      entry: path.resolve(__dirname, './src/components/index.ts'), //指定组件编译入口文件
       name: 'vue3-scrolling-number',
       fileName: (format) => `vue3-scrolling-number.${format}.js`
     }, //库编译模式配置
