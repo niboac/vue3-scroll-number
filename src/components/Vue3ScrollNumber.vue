@@ -51,7 +51,6 @@ const fromNumbers = computed(() => {
   return getFromNumbers(newFrom.value)
 })
 
-
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 {
-  "name": "vue3-number",
-  "version": "0.0.0",
+  "name": "vue3-scroll-number",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,9 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "v": "npm version patch",
+    "pub": "vite build && npm config set registry https://registry.npmjs.org && npm publish && npm config set registry https://registry.npmmirror.com"
   },
   "dependencies": {
     "vue": "^3.4.15"
