@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/niboac/vue3-scroll-number/compare/v0.0.4...v0.0.5) (2024-02-06)
+
+
+### Features
+
+* 增加 index.d.ts ([b35aa3c](https://github.com/niboac/vue3-scroll-number/commit/b35aa3c4ac88bd9a60712302553fd72d3829200c))
+
 ### 0.0.4 (2024-02-06)
 
 
