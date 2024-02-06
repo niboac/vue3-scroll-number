@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Vue3ScrollingNumber from 'vue3-scrolling-number'
+// import Vue3ScrollingNumber from 'vue3-scrolling-number'
 import 'vue3-scrolling-number/dist/style.css'
 import { ref } from 'vue';
 
