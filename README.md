@@ -3,7 +3,7 @@
 
 ## 效果
 
-![img](./public/scroll-number.gif)
+![img](https://raw.githubusercontent.com/niboac/vue3-scroll-number/main/public/scroll-number.gif)
 
 
 ## 安装
