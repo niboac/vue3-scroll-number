@@ -17,9 +17,10 @@ pnpm add vue3-scrolling-number
 
 ## 使用
 ```
-import Vue3ScrollingNumber from 'vue3-scrolling-number/src/components/Vue3ScrollNumber.vue'
- ```
-```
+import Vue3ScrollingNumber from 'vue3-scrolling-number'
+import 'vue3-scrolling-number/dist/style.css'
+
+ 
  <Vue3ScrollingNumber
       style="font-size: 55px;"
       :from="21"
