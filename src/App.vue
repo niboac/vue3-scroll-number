@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Vue3ScrollNumber from './components/Vue3ScrollNumber.vue'
+import Vue3ScrollingNumber from 'vue3-scrolling-number/src/components/Vue3ScrollNumber.vue'
 import { ref } from 'vue';
 
 const value = ref(229)
@@ -17,7 +17,7 @@ addValue()
 
 <template>
   <main style="display: flex; justify-content: center;">
-    <Vue3ScrollNumber
+    <Vue3ScrollingNumber
       style="font-size: 55px;"
       :from="21"
       :to="value"

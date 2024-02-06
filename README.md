@@ -1,6 +1,11 @@
 # vue3-scrolling-number
 一个仅支持 vue3 的滚动数字组件
 
+## 效果
+
+![img](./public/scroll-number.gif)
+
+
 ## 安装
 ```
 npm install vue3-scrolling-number
