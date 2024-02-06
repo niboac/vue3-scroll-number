@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/niboac/vue3-scroll-number/compare/v0.0.5...v0.0.6) (2024-02-06)
+
+
+### Bug Fixes
+
+* 修改 package.json ([4441337](https://github.com/niboac/vue3-scroll-number/commit/4441337da2d25bef0ec964bdd4ac273d597f848d))
+
 ### [0.0.5](https://github.com/niboac/vue3-scroll-number/compare/v0.0.4...v0.0.5) (2024-02-06)
 
 
