@@ -1,33 +1,25 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
+import type { PropType } from 'vue';
 
 const props = defineProps({
-  from: {
-    type: Number,
-    default: 0,
-  },
-  to: {
-    type: Number,
-    default: 0,
-  },
+  list: {
+    type: Array as PropType<number[]>,
+    default: () => [0, 0],
+  }
 });
 
 const styleStr = ref('translateY(0em)')
 
 const numbers = computed(() => {
-  return generateNumberList(props.from, props.to)
+  return generateNumberList(props.list[0], props.list[1])
 })
 
-// const style = computed(() => {
-//   return { transform: 'translateY(' + (-numbers.value.length) + 'em' }
-// })
 
-watch(() => props.to, (newCount, oldCount) => {
+watch(() => props.list, (newCount, oldCount) => {
   setTimeout(() => {
     styleStr.value = 'translateY(0em)'
-
-
-    let num = generateNumberList(props.from, props.to)
+    let num = generateNumberList(props.list[0], props.list[1])
     setTimeout(() => {
       styleStr.value = 'translateY(' + (-num.length) + 'em'
     }, 10)
@@ -64,7 +56,7 @@ function generateNumberList(a: number, b: number) {
         v-for="(item) in numbers"
         :key="item"
       >{{ item }}</div>
-      <div>{{ to }}</div>
+      <div>{{ props.list[1] }}</div>
     </div>
   </div>
 </template>
@@ -82,7 +74,8 @@ function generateNumberList(a: number, b: number) {
   display: flex;
   flex-direction: column;
   transition: transform 0.5s ease-out;
-
+  min-width: 0.6em;
+  text-align: center;
 }
 
 /* ----------------------------------------------

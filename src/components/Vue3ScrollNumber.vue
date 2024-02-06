@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
+import type { Ref } from 'vue';
 import Vue3ScrollNUmberItem from './Vue3ScrollNumberItem.vue';
 
 
@@ -14,8 +15,20 @@ const props = defineProps({
   },
 });
 
-const newFrom = computed(() => {
-  return props.from
+const newFrom = ref(props.from)
+const valCache = ref(props.from)
+
+const toNumbers: Ref<String[]> = ref([])
+
+watch(() => props.to, (newCount, oldCount) => {
+
+  newFrom.value = valCache.value
+  setTimeout(() => {
+    toNumbers.value = getToNumbers(props.to)
+    valCache.value = props.to
+  }, 10)
+}, {
+  immediate: true
 })
 
 function getFromNumbers(num: Number) {
@@ -38,9 +51,7 @@ const fromNumbers = computed(() => {
   return getFromNumbers(newFrom.value)
 })
 
-const toNumbers = computed(() => {
-  return getToNumbers(props.to)
-})
+
 </script>
 
 <template>
@@ -48,8 +59,7 @@ const toNumbers = computed(() => {
     <Vue3ScrollNUmberItem
       v-for="(item, index) in toNumbers"
       :key="(to.toString()) + index"
-      :from="Number(fromNumbers[index]) || 0"
-      :to="Number(item) || 0"
+      :list="[Number(fromNumbers[index]) || 0, Number(item) || 0]"
     ></Vue3ScrollNUmberItem>
   </div>
 </template>
