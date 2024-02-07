@@ -1,6 +1,6 @@
 {
   "name": "vue3-scrolling-number",
-  "version": "0.0.9",
+  "version": "0.0.8",
   "private": false,
   "type": "module",
   "scripts": {
@@ -12,7 +12,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "v": "standard-version --release-as patch",
+    "vp": "npm version patch",
     "release": "standard-version --header",
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
