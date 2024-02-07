@@ -1,9 +1,9 @@
-import Vue3ScrollNumber from './vue3-scrolling-number.vue'
+import Vue3ScrollingNumber from './vue3-scrolling-number.vue'
 import type { App } from 'vue'
 
 // 按需引入
 
-const components = [Vue3ScrollNumber]
+const components = [Vue3ScrollingNumber]
 
 export function install(app: App) {
   components.forEach((component) => {
@@ -15,4 +15,4 @@ export default {
   install
 }
 
-export { Vue3ScrollNumber }
+export { Vue3ScrollingNumber }

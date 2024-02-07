@@ -8,9 +8,6 @@ dependencies:
   vue:
     specifier: ^3.4.15
     version: 3.4.15(typescript@5.3.3)
-  vue3-grid-layout-next:
-    specifier: ^1.0.6
-    version: 1.0.6(typescript@5.3.3)
 
 devDependencies:
   '@rushstack/eslint-patch':
@@ -77,8 +74,8 @@ devDependencies:
     specifier: ^1.8.27
     version: 1.8.27(typescript@5.3.3)
   vue3-scrolling-number:
-    specifier: ^0.0.8
-    version: 0.0.8(typescript@5.3.3)
+    specifier: ^0.0.10
+    version: 0.0.10(typescript@5.3.3)
 
 packages:
 
@@ -647,101 +644,6 @@ packages:
     resolution: {integrity: sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==}
     engines: {node: '>=6.9.0'}
     dev: true
-
-  /@interactjs/actions@1.10.26(@interactjs/core@1.10.26)(@interactjs/utils@1.10.26):
-    resolution: {integrity: sha512-MiZVpNmvNVziK2LuPUFLojGhRcH3zVWyyCqT5RFhVGSNmYBPWzhpLa387D56oGZkglUJ9VQJKilLhPzLL4jSSw==}
-    peerDependencies:
-      '@interactjs/core': 1.10.26
-      '@interactjs/utils': 1.10.26
-    dependencies:
-      '@interactjs/core': 1.10.26(@interactjs/utils@1.10.26)
-      '@interactjs/utils': 1.10.26
-    optionalDependencies:
-      '@interactjs/interact': 1.10.26
-    dev: false
-
-  /@interactjs/auto-scroll@1.10.26(@interactjs/utils@1.10.26):
-    resolution: {integrity: sha512-oNDJ2uMk2dBUOajuoJkjQGQOaNCN2oUxGfwyv6YnjPWTpoQtmZ9GP+Ywr4LWQ5z8VMyctzl4u7c3gTMwU4d7/w==}
-    peerDependencies:
-      '@interactjs/utils': 1.10.26
-    dependencies:
-      '@interactjs/utils': 1.10.26
-    optionalDependencies:
-      '@interactjs/interact': 1.10.26
-    dev: false
-
-  /@interactjs/auto-start@1.10.26(@interactjs/core@1.10.26)(@interactjs/utils@1.10.26):
-    resolution: {integrity: sha512-CnYH3quBJuHR8IuDW258npf18tnI3Ornk4bVBi6o42jGf54X5FIb4Uu+H2mAFQm8xH81lTqa59CHb+m8KcouYg==}
-    peerDependencies:
-      '@interactjs/core': 1.10.26
-      '@interactjs/utils': 1.10.26
-    dependencies:
-      '@interactjs/core': 1.10.26(@interactjs/utils@1.10.26)
-      '@interactjs/utils': 1.10.26
-    optionalDependencies:
-      '@interactjs/interact': 1.10.26
-    dev: false
-
-  /@interactjs/core@1.10.26(@interactjs/utils@1.10.26):
-    resolution: {integrity: sha512-UcxCkUlf2iqhqCKvGo+YGAat19OPYIlKGlyDmxLU3reyVHDvv8+FSckX4/sfQakz4yyMpUh+r8Ali9rFH9Rt9w==}
-    peerDependencies:
-      '@interactjs/utils': 1.10.26
-    dependencies:
-      '@interactjs/utils': 1.10.26
-    dev: false
-
-  /@interactjs/dev-tools@1.10.26(@interactjs/modifiers@1.10.26)(@interactjs/utils@1.10.26)(typescript@5.3.3):
-    resolution: {integrity: sha512-bg0uvk+9cDNjksLKoFHjQmWJNnAnJPs++OqMqWE1KgSShhfNpna3Vyfcx7rMkcspirY7MYH5mdpokLyzCsvMzw==}
-    peerDependencies:
-      '@interactjs/modifiers': 1.10.26
-      '@interactjs/utils': 1.10.26
-    dependencies:
-      '@interactjs/modifiers': 1.10.26(@interactjs/core@1.10.26)(@interactjs/utils@1.10.26)
-      '@interactjs/utils': 1.10.26
-    optionalDependencies:
-      '@interactjs/interact': 1.10.26
-      vue: 3.4.15(typescript@5.3.3)
-    transitivePeerDependencies:
-      - typescript
-    dev: false
-
-  /@interactjs/interact@1.10.26:
-    resolution: {integrity: sha512-thxSJDxLV8s2Nn7i0HWjW5V6dFE/Qv2AgtNkH+QV3PdAb0AtOZpidCiKS4ni/TMen+skoalirMIxnUo9yXPVvg==}
-    dependencies:
-      '@interactjs/core': 1.10.26(@interactjs/utils@1.10.26)
-      '@interactjs/utils': 1.10.26
-    dev: false
-
-  /@interactjs/modifiers@1.10.26(@interactjs/core@1.10.26)(@interactjs/utils@1.10.26):
-    resolution: {integrity: sha512-Y7V7Qw9kD0KrBRKzpd7h1U2IDlL/J7aN2B4HzPS/JzH+mjTgzcGY2RPpGJZeX3ld5HWlfGKTgT0+1L/SBlCXbA==}
-    peerDependencies:
-      '@interactjs/core': 1.10.26
-      '@interactjs/utils': 1.10.26
-    dependencies:
-      '@interactjs/core': 1.10.26(@interactjs/utils@1.10.26)
-      '@interactjs/snappers': 1.10.26(@interactjs/utils@1.10.26)
-      '@interactjs/utils': 1.10.26
-    optionalDependencies:
-      '@interactjs/interact': 1.10.26
-    dev: false
-
-  /@interactjs/snappers@1.10.26(@interactjs/utils@1.10.26):
-    resolution: {integrity: sha512-WSNQLsaprLjShqmPBcz51SX+OOoYv9gYnE4M7HfakxTl2kSd5ae4d/HkM9n41J8IcCCEOBn2l49AO00qyRmnqw==}
-    peerDependencies:
-      '@interactjs/utils': 1.10.26
-    dependencies:
-      '@interactjs/utils': 1.10.26
-    optionalDependencies:
-      '@interactjs/interact': 1.10.26
-    dev: false
-
-  /@interactjs/types@1.10.26:
-    resolution: {integrity: sha512-DekYpdkMV3XJVd/0k3f4pJluZAsCiG86yEtVXvGLK0lS/Fj0+OzYEv7HoMpcBZSkQ8s7//yaeEBgnxy2tV81lA==}
-    dev: false
-
-  /@interactjs/utils@1.10.26:
-    resolution: {integrity: sha512-tTmHsvQrLY4KDXyXqU5Y68Z2a3IzPD1WF87x+3ike1/Tu8dHb9Ea2gN1LBTbtSj7Nv3U/vA39opgrHBFha1DGA==}
-    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1605,10 +1507,6 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
 
-  /batch-processor@1.0.0:
-    resolution: {integrity: sha512-xoLQD8gmmR32MeuBHgH0Tzd5PuSZx71ZsbhVxOCRbgktZEPe4SQy7s9Z50uPp0F/f7iw2XmkHN2xkgbMfckMDA==}
-    dev: false
-
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
@@ -2128,12 +2026,6 @@ packages:
   /electron-to-chromium@1.4.656:
     resolution: {integrity: sha512-9AQB5eFTHyR3Gvt2t/NwR0le2jBSUNwCnMbUCejFWHD+so4tH40/dRLgoE+jxlPeWS43XJewyvCv+I8LPMl49Q==}
     dev: true
-
-  /element-resize-detector@1.2.4:
-    resolution: {integrity: sha512-Fl5Ftk6WwXE0wqCgNoseKWndjzZlDCwuPTcoVZfCP9R3EHQF8qUtr3YUPNETegRBOKqQKPW3n4kiIWngGi8tKg==}
-    dependencies:
-      batch-processor: 1.0.0
-    dev: false
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2775,12 +2667,6 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
-  /interactjs@1.10.26:
-    resolution: {integrity: sha512-5gNTNDTfEHp2EifqtWGi5VkD3CMZVJSTGmtK/IsVRd+rkOk3E63iVs5Z+IeD5K1Lr0qZpU2754VHAwf5i+Z9xg==}
-    dependencies:
-      '@interactjs/types': 1.10.26
-    dev: false
-
   /is-arrayish@0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
     dev: true
@@ -3213,10 +3099,6 @@ packages:
     resolution: {integrity: sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==}
     engines: {node: '>=16 || 14 >=14.17'}
     dev: true
-
-  /mitt@3.0.1:
-    resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
-    dev: false
 
   /mlly@1.5.0:
     resolution: {integrity: sha512-NPVQvAY1xr1QoVeG0cy8yUYC7FQcOx6evl/RjT1wL5FvzPnzOysoqB/jmx/DhssT2dYa8nxECLAaFI/+gVLhDQ==}
@@ -4398,27 +4280,10 @@ packages:
       typescript: 5.3.3
     dev: true
 
-  /vue3-grid-layout-next@1.0.6(typescript@5.3.3):
-    resolution: {integrity: sha512-gkQcvBAkWwiQ/WX3gRQud4AdYE4B07MAxvOHhucCE/E/IcDU252XK1InlqzsXmzjug7Zo7FLUMucGBRT9TdX+Q==}
+  /vue3-scrolling-number@0.0.10(typescript@5.3.3):
+    resolution: {integrity: sha512-zmTgQORfqPTEtALhvSqizIDR6SZTPHB9wttR1IBglP/iwMtpxU4OEffcsEt2bfO5te3ODjM8JJum0e7ld2FI9g==}
     dependencies:
-      '@interactjs/actions': 1.10.26(@interactjs/core@1.10.26)(@interactjs/utils@1.10.26)
-      '@interactjs/auto-scroll': 1.10.26(@interactjs/utils@1.10.26)
-      '@interactjs/auto-start': 1.10.26(@interactjs/core@1.10.26)(@interactjs/utils@1.10.26)
-      '@interactjs/core': 1.10.26(@interactjs/utils@1.10.26)
-      '@interactjs/dev-tools': 1.10.26(@interactjs/modifiers@1.10.26)(@interactjs/utils@1.10.26)(typescript@5.3.3)
-      '@interactjs/interact': 1.10.26
-      '@interactjs/modifiers': 1.10.26(@interactjs/core@1.10.26)(@interactjs/utils@1.10.26)
-      '@interactjs/utils': 1.10.26
-      element-resize-detector: 1.2.4
-      interactjs: 1.10.26
-      mitt: 3.0.1
-    transitivePeerDependencies:
-      - typescript
-    dev: false
-
-  /vue3-scrolling-number@0.0.8(typescript@5.3.3):
-    resolution: {integrity: sha512-utl2RsjiEv2a0HkaVIYN4ylNvhOGW+QJBp/BiaPYf1UL4QJcHBdbIEPrM6A/LzxUJvI3P9aj8WZM1z71eZQRbA==}
-    dependencies:
+      lodash: 4.17.21
       vue: 3.4.15(typescript@5.3.3)
     transitivePeerDependencies:
       - typescript
