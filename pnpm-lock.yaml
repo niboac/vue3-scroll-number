@@ -74,8 +74,8 @@ devDependencies:
     specifier: ^1.8.27
     version: 1.8.27(typescript@5.3.3)
   vue3-scrolling-number:
-    specifier: ^0.0.10
-    version: 0.0.10(typescript@5.3.3)
+    specifier: ^0.0.12
+    version: 0.0.12(typescript@5.3.3)
 
 packages:
 
@@ -4280,10 +4280,9 @@ packages:
       typescript: 5.3.3
     dev: true
 
-  /vue3-scrolling-number@0.0.10(typescript@5.3.3):
-    resolution: {integrity: sha512-zmTgQORfqPTEtALhvSqizIDR6SZTPHB9wttR1IBglP/iwMtpxU4OEffcsEt2bfO5te3ODjM8JJum0e7ld2FI9g==}
+  /vue3-scrolling-number@0.0.12(typescript@5.3.3):
+    resolution: {integrity: sha512-Hi9xj6CjqeQIe5fQXT6jvO+uLMToUtoSDzp3EopT+w2iDf0LyqCWXXidVznKNfhaCYbxHTm+lAs4+jtvBERU/Q==}
     dependencies:
-      lodash: 4.17.21
       vue: 3.4.15(typescript@5.3.3)
     transitivePeerDependencies:
       - typescript
