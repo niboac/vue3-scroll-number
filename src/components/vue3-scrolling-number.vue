@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
 import type { Ref } from 'vue';
-import Vue3ScrollNUmberItem from './Vue3ScrollNumberItem.vue';
+import Vue3ScrollNUmberItem from './vue3-scrolling-number-item.vue';
 
 
 const props = defineProps({

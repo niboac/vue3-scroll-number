@@ -1,4 +1,4 @@
-import Vue3ScrollNumber from './Vue3ScrollNumber.vue'
+import Vue3ScrollNumber from './vue3-scrolling-number.vue'
 import type { App } from 'vue'
 
 // 按需引入
