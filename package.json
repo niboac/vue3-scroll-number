@@ -12,11 +12,12 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "v": "npm version patch",
+    "v": "standard-version --release-as patch",
     "release": "standard-version --header",
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major",
+    "copy": "node ./build/copy.js",
     "pub": "vite build && npm config set registry https://registry.npmjs.org && npm publish && npm config set registry https://registry.npmmirror.com"
   },
   "dependencies": {
@@ -55,18 +56,18 @@
     "dist",
     "src"
   ],
-  "main": "./dist/vue3-scrolling-number.umd.js",
-  "module": "./dist/vue3-scrolling-number.es.js",
+  "main": "./dist/vue3-scrolling-number.cjs",
+  "module": "./dist/vue3-scrolling-number.js",
   "exports": {
     "./dist/style.css": "./dist/style.css",
     "./css": "./dist/style.css",
     ".": {
       "types": "./dist/src/components/index.d.ts",
-      "import": "./dist/vue3-scrolling-number.es.js",
-      "require": "./dist/vue3-scrolling-number.umd.js"
+      "import": "./dist/vue3-scrolling-number.js",
+      "require": "./dist/vue3-scrolling-number.cjs"
     }
   },
-  "types": "./dist/src/components/vue3-scrolling-number.d.ts",
+  "types": "./dist/src/components/index.d.ts",
   "keywords": [
     "vue3",
     "TypeScript",
