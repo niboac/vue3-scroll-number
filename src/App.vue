@@ -1,6 +1,6 @@
 <script setup lang="ts">
-// import Vue3ScrollingNumber from 'vue3-scrolling-number'
-import AnimatedCounter from "vue-animated-counter"
+import Vue3ScrollingNumber from 'vue3-scrolling-number'
+// import Vue3ScrollingNumber from './components/vue3-scrolling-number.vue'
 
 import 'vue3-scrolling-number/dist/style.css'
 import { ref } from 'vue';
@@ -24,11 +24,6 @@ addValue()
       style="font-size: 55px;"
       :from="21"
       :to="value"
-    />
-    <AnimatedCounter
-      :value="500"
-      :duration="1000"
-      class="counter"
     />
   </main>
 </template>

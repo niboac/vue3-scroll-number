@@ -58,13 +58,15 @@
   "main": "./dist/vue3-scrolling-number.umd.js",
   "module": "./dist/vue3-scrolling-number.es.js",
   "exports": {
+    "./dist/style.css": "./dist/style.css",
+    "./css": "./dist/style.css",
     ".": {
-      "types": "./dist/vue3-scrolling-number.es.d.ts",
+      "types": "./dist/src/components/index.d.ts",
       "import": "./dist/vue3-scrolling-number.es.js",
       "require": "./dist/vue3-scrolling-number.umd.js"
     }
   },
-  "types": "./dist/vue3-scrolling-number.es.d.ts",
+  "types": "./dist/src/components/vue3-scrolling-number.d.ts",
   "keywords": [
     "vue3",
     "TypeScript",
