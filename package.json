@@ -1,6 +1,6 @@
 {
   "name": "vue3-scrolling-number",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": false,
   "type": "module",
   "scripts": {
